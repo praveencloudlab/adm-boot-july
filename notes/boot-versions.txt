@@ -6,7 +6,7 @@ Spring boot advanced
 
 
 spring boot version
-----------------------
+-----------------------------------
 boot 1.0			April 2014
 boot 1.1			June  2014
 boot 1.2  			Dec	  2014
@@ -27,6 +27,24 @@ boot 2.7            may   2022
 -----------------------------------
 boot 3.0            Nov   2023
 boot 3.1            May   2023
+
+
+
+Software
+-----------
+JDK 17
+Eclipse IDE for JAVA EE Developer with STS(4.0) plugin/STS/IntejjiJ Idea
+MySQL 8 database, Redis DB
+PostMan
+Rabbit MQ / Apache Kafka => Docker 
+==========================================
+
+
+
+
+
+
+
 
 
 
