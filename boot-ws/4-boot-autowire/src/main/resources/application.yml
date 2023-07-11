@@ -1,0 +1,11 @@
+name:
+    James
+ecart:
+      categories:
+                  mobiles: 
+                          name:
+                                iPhone 14 Pro
+                          price:
+                                135000
+                          color:
+                                Black
