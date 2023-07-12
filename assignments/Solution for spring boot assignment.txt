@@ -1,0 +1,166 @@
+Solution 
+----------
+1.Create the following package structure:
+com.cts.bank
+com.cts.bank.service
+com.cts.bank.dao
+com.cts.bank.model
+com.cts.bank.dto
+
+1.Create the Account class in the com.cts.bank.model package:
+package com.cts.bank.model;
+
+public class Account {
+    private double balance;
+
+    public Account(double balance) {
+        this.balance = balance;
+    }
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+    public void withdraw(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
+        } else {
+            System.out.println("Insufficient balance");
+        }
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+
+
+Create the notification services for SMS and Email in the com.cts.bank.service package:
+
+package com.cts.bank.service;
+
+public interface NotificationService {
+    void sendNotification(String message);
+}
+
+package com.cts.bank.service;
+
+public class SmsNotificationService implements NotificationService {
+    @Override
+    public void sendNotification(String message) {
+        System.out.println("Sending SMS notification: " + message);
+    }
+}
+
+package com.cts.bank.service;
+
+public class EmailNotificationService implements NotificationService {
+    @Override
+    public void sendNotification(String message) {
+        System.out.println("Sending Email notification: " + message);
+    }
+}
+
+
+Create the AccountService class in the com.cts.bank.service package to handle account operations and notifications:
+
+package com.cts.bank.service;
+
+import com.cts.bank.dao.AccountDao;
+import com.cts.bank.model.Account;
+
+public class AccountService {
+    private final AccountDao accountDao;
+    private final NotificationService notificationService;
+
+    public AccountService(AccountDao accountDao, NotificationService notificationService) {
+        this.accountDao = accountDao;
+        this.notificationService = notificationService;
+    }
+
+    public void deposit(int accountId, double amount) {
+        Account account = accountDao.getAccountById(accountId);
+        if (account != null) {
+            account.deposit(amount);
+            notificationService.sendNotification("Deposit successful");
+        }
+    }
+
+    public void withdraw(int accountId, double amount) {
+        Account account = accountDao.getAccountById(accountId);
+        if (account != null) {
+            account.withdraw(amount);
+            notificationService.sendNotification("Withdrawal successful");
+        }
+    }
+
+    public double checkBalance(int accountId) {
+        Account account = accountDao.getAccountById(accountId);
+        if (account != null) {
+            return account.getBalance();
+        }
+        return 0;
+    }
+}
+
+
+Create the AccountDao interface in the com.cts.bank.dao package:
+
+package com.cts.bank.dao;
+
+import com.cts.bank.model.Account;
+
+public interface AccountDao {
+    Account getAccountById(int accountId);
+}
+
+Implement the AccountDao interface in the com.cts.bank.dao package:
+package com.cts.bank.dao;
+
+import com.cts.bank.model.Account;
+
+public class AccountDaoImpl implements AccountDao {
+    @Override
+    public Account getAccountById(int accountId) {
+        // Implement logic to fetch the account from the database or any other data source
+        return null; // Return the fetched account object
+    }
+}
+
+Create a BankApplication class in the com.cts.bank package to test the application:
+
+package com.cts.bank;
+
+import com.cts.bank.dao.AccountDao;
+import com.cts.bank.dao.AccountDaoImpl;
+import com.cts.bank.service.AccountService;
+import com.cts.bank.service.EmailNotificationService;
+import com.cts.bank.service.NotificationService;
+import com.cts.bank.service.SmsNotificationService;
+
+public class BankApplication {
+    public static void main(String[] args) {
+        // Create instances of the required classes
+        AccountDao accountDao = new AccountDaoImpl();
+        NotificationService smsNotificationService = new SmsNotificationService();
+        NotificationService emailNotificationService = new EmailNotificationService();
+
+        // Create AccountService instances with different notification services
+        AccountService smsAccountService = new AccountService(accountDao, smsNotificationService);
+        AccountService emailAccountService = new AccountService(accountDao, emailNotificationService);
+
+        // Perform account operations and test the notifications
+        smsAccountService.deposit(1234, 1000);
+        emailAccountService.withdraw(5678, 500);
+    }
+}
+
+
+This solution follows the provided package structure and utilizes loose coupling by using interfaces (AccountDao, NotificationService) and autowiring the dependencies in the AccountService constructor.
+
+
+
+
+
+
+
