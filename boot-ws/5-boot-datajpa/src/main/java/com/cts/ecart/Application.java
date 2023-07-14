@@ -7,6 +7,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import com.cts.ecart.entity.Category;
 import com.cts.ecart.repository.BrandRepository;
 import com.cts.ecart.repository.CategoryRepository;
+import com.cts.ecart.repository.ProductRepository;
 
 @SpringBootApplication
 public class Application {
@@ -15,6 +16,7 @@ public class Application {
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
 		CategoryRepository catRepo = context.getBean(CategoryRepository.class);
 		BrandRepository brandRepo = context.getBean(BrandRepository.class);
+		ProductRepository prodRepo=context.getBean(ProductRepository.class);
 		//catRepo.findAll().forEach(System.out::println);
 		
 		//brandRepo.findAll().forEach(System.out::println);
@@ -27,10 +29,11 @@ public class Application {
 		}
 		*/
 		
-		Category category = catRepo.findById(45).orElse(null);
-		System.out.println(category);
+		//Category category = catRepo.findById(45).orElse(null);
+		//System.out.println(category);
 		
 		
+		prodRepo.findAll().forEach(System.out::println);
 		
 		
 		
