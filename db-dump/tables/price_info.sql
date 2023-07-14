@@ -1,0 +1,76 @@
+create table price_info
+(
+    price_id int    not null
+        primary key,
+    price    double not null
+);
+
+INSERT INTO ecart.price_info (price_id, price) VALUES (1, 95000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (4, 45000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (8, 235000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (12, 97000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (15, 135000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (19, 125000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (22, 122000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (25, 98000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (28, 125000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (32, 267000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (36, 55000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (46, 45000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (50, 235000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (54, 97000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (57, 135000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (61, 125000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (64, 122000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (67, 98000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (70, 125000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (74, 267000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (78, 55000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (83, 245000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (87, 65000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (91, 56000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (95, 67000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (99, 34000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (102, 120000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (152, 145000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (165, 23000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (168, 38000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (202, 156000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (252, 116000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (302, 145000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (352, 145000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (353, 156000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (402, 156000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (403, 1000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (452, 156000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (602, 356000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (652, 15600);
+INSERT INTO ecart.price_info (price_id, price) VALUES (702, 450000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (703, 450000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (704, 450000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (705, 450000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (752, 450000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (802, 98000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (803, 98000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (804, 98000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (805, 56000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (852, 225000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (853, 275000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (902, 34000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (903, 45000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (904, 32000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (952, 32000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (1002, 32000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (1052, 32000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (1102, 32000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (1103, 32000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (1152, 32000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (1202, 32000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (1252, 32000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (1253, 32000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (1302, 32000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (1303, 45000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (1304, 45000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (1305, 45000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (1306, 100000);
+INSERT INTO ecart.price_info (price_id, price) VALUES (1452, 46000);

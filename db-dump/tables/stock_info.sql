@@ -1,0 +1,76 @@
+create table stock_info
+(
+    stock_id int not null
+        primary key,
+    stock    int not null
+);
+
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (1, 30);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (5, 30);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (9, 10);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (13, 13);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (16, 30);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (20, 30);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (23, 6);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (26, 6);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (29, 6);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (33, 30);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (37, 8);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (47, 30);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (51, -1974);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (55, -1974);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (58, 20);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (62, 30);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (65, 6);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (68, 6);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (71, 6);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (75, 30);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (79, 4);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (84, 14);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (88, 20);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (92, 16);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (96, 30);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (100, 13);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (102, 65);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (152, 12);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (166, 12);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (169, 18);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (202, 35);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (252, 11);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (302, 46);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (352, 46);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (353, 23);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (402, 23);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (403, 65);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (452, 87);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (602, 45);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (652, 60);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (702, 12);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (703, 12);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (704, 12);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (705, 12);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (752, 12);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (802, 23);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (803, 23);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (804, 23);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (805, 23);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (852, 18);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (853, 45);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (902, 23);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (903, 19);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (904, 11);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (952, 11);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (1002, 11);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (1052, 11);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (1102, 11);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (1103, 11);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (1152, 11);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (1202, 11);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (1252, 11);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (1253, 11);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (1302, 11);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (1303, 30);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (1304, 65);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (1305, 30);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (1306, 24);
+INSERT INTO ecart.stock_info (stock_id, stock) VALUES (1452, 8);
