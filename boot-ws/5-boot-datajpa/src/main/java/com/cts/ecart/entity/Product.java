@@ -1,5 +1,7 @@
 package com.cts.ecart.entity;
 
+import java.util.Objects;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -49,6 +51,25 @@ public class Product {
 		return "Product [productId=" + productId + ", productTitle=" + productTitle + ", price=" + price + ", stock="
 				+ stock + "]";
 	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(price, productId, productTitle, stock);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Product other = (Product) obj;
+		return Objects.equals(price, other.price) && productId == other.productId
+				&& Objects.equals(productTitle, other.productTitle) && Objects.equals(stock, other.stock);
+	}
+	
+	
+	
 	
 	
 	
