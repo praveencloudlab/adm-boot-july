@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,6 +27,7 @@ import com.cts.ecart.service.ProductServiceImpl;
 
 @RestController
 @RequestMapping(value = "/api/products")
+@CrossOrigin
 public class ProductResource {
 
 	@Autowired
@@ -109,7 +111,7 @@ public class ProductResource {
 		// save/edit product
 	    @PostMapping
 		public Product save(@RequestBody ProductInfo product) {
-	    	
+	    
 	    	Product prod=new Product();
 			prod.setDescription(product.getDescription());
 			prod.setKeywords(product.getKeywords());
@@ -204,5 +206,15 @@ public class ProductResource {
 
         return dto;
     }
+	
+	
+	/*
+	 * 1. http://localhost:8080/api/products/withBrands/1
+	 * 2. http://localhost:8080/api/products/price/1 => fetch price of a product ID=1
+	 * 3. add and edit brand and category (4 end points)
+	 * 4. delete brand and category by id (2 end points)
+	 * 
+	 * 
+	 */
 
 }
